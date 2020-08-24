@@ -31,4 +31,21 @@ $(function () {
     nextArrow:
       '<button class="product-slider__slider-btn product-slider__slider-btnnext"><img src="images/arrow-black-right.svg" alt="Right arrow"></button>'
   });
+
+  $('.filter-style').styler();
+
+  $('.filter__item-drop, .filter__settings').on('click', function () {
+    $(this).toggleClass('filter__item-drop--active');
+    $(this).next().slideToggle(200);
+  });
+
+  $('.js-range-slider').ionRangeSlider({
+    grid: false,
+    type: 'double',
+    min: 100000,
+    max: 1600000,
+    from: 300000,
+    to: 1000000,
+    hide_from_to: true
+  });
 });
