@@ -73,7 +73,7 @@
               <a class="menu-categories__link" href="#">Катера</a>
             </li>
             <li class="menu-categories__item">
-              <a class="menu-categories__link" href="#">Гидроциклы</a>
+              <a class="menu-categories__link menu-categories__link--active">Гидроциклы</a>
             </li>
             <li class="menu-categories__item">
               <a class="menu-categories__link" href="#">Лодки</a>
@@ -120,9 +120,9 @@
           </div>
           <div class="catalog__filter-btn">
             <select class="filter-style">
-              <option value=""></option>
-              <option value=""></option>
-              <option value=""></option>
+              <option value="">По популярности</option>
+              <option value="">По цене</option>
+              <option value="">По количеству отзывов</option>
             </select>
             <button class="catalog__gilter-btngrid">
               <svg
@@ -217,20 +217,20 @@
        <aside class="catalog__inner-aside aside-filter">
         <div class="tabs-wrapper">
         <div class="tabs aside-filter__tabs">
-      <a class="tab aside-filter__tab tab--active" href="#">
+      <a class="tab aside-filter__tab tab--active" href="#catalog-tab-1">
         <span>параметры</span>
       </a>
-      <a class="tab aside-filter__tab" href="#">
+      <a class="tab aside-filter__tab" href="#catalog-tab-2">
         <span>по марке</span>
       </a>
       </div>
       <div class="tabs-container">
-        <div class="tabs-content aside-filter__tabs-content tabs-content--active">
+        <div class="tabs-content aside-filter__tabs-content tabs-content--active" id="catalog-tab-1">
 
       <form class="aside_filter">
         <ul class="aside-filter__list">
           <li class="aside-filter__item-drop">
-      <p class="aside-filter__item-title filter__item-drop filter__item-drop--ative">Наличие</p>
+      <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Наличие</p>
       <div class="aside-filter__content">
       <div class="aside-filter__content-box">
         <label class="aside-filter__content-label">
@@ -244,16 +244,189 @@
       </div>
       </div>
       </li>
-      <li class="aside-filter__item-drop"></li>
-      <li class="aside-filter__item-drop"></li>
-      <li class="aside-filter__item-list"></li>
-      </ul>
+      <li class="aside-filter__item-drop">
+       <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Новинки</p>
+      <div class="aside-filter__content aside-filter__content-radio">
+      <div class="aside-filter__content-box">
+        <label class="aside-filter__content-label">
+        <input class="filter-style" type="radio" name="radio" checked>
+        Все</label>
+      </div>
+      <div class="aside-filter__content-box">
+        <label class="aside-filter__content-label">
+        <input class="filter-style" type="radio" name="radio">
+        Новинки</label>
+      </div>
+       <div class="aside-filter__content-box">
+        <label class="aside-filter__content-label">
+        <input class="filter-style" type="radio" name="radio">
+        Акции</label>
+      </div>
+      </div>
+      </li>
+      <li class="aside-filter__item-drop">
+          <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Цена</p>
+      <div class="aside-filter__content">
+      <input type="text" class="js-range-slider" name="my_range">
+      </div>
+
+      </li>
+      <li class="aside-filter__item-list">
+      <div class="filter__item-list">
+      <p class="filter__item-listtitle">Мощность, л.с.</p>
+      <select class="filter-style filter__item-listselect" name="" id="">
+      <option>90</option>
+      <option>130</option>
+      <option>154</option>
+      <option>230</option>
+      <option>300</option>
+      </select>
+      </div>
+        <div class="filter__item-list">
+      <p class="filter__item-listtitle">Мощность двигателя, л.с.</p>
+      <select class="filter-style filter__item-listselect" name="" id="">
+      <option>90</option>
+      <option>130</option>
+      <option>154</option>
+      <option>230</option>
+      <option>300</option>
+      </select>
+      </div>
+        <div class="filter__item-list">
+      <p class="filter__item-listtitle">Макс. скорость</p>
+      <select class="filter-style filter__item-listselect" name="" id="">
+      <option>90</option>
+      <option>130</option>
+      <option>154</option>
+      <option>230</option>
+      <option>300</option>
+      </select>
+      </div>
+      </li>
+
+
+    <li class="aside-filter__item-drop">
+      <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Бренд</p>
+      <div class="aside-filter__content">
+      <div class="aside-filter__content-box">
+        <label class="aside-filter__content-label">
+        <input class="filter-style" type="checkbox" checked>
+        BRP</label>
+      </div>
+      <div class="aside-filter__content-box">
+        <label class="aside-filter__content-label">
+        <input class="filter-style" type="checkbox" checked>
+        Spark 2</label>
+      </div>
+
+        <div class="aside-filter__content-box">
+        <label class="aside-filter__content-label">
+        <input class="filter-style" type="checkbox">
+        Spark 3</label>
+      </div>
+      <div class="filter-more">
+      <button class="filter-more__btn">Показать еще</button>
+      </div>
+      </div>
+      </li>
+
+ <li class="aside-filter__item-drop models">
+      <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Модель</p>
+      <div class="aside-filter__content">
+      <input class="filter-search" type="text" placeholder="Введите модель">
+      <div class="aside-filter__content-box">
+        <label class="aside-filter__content-label">
+        <input class="filter-style" type="checkbox" checked>
+        Sea-doo Spark 2</label>
+      </div>
+      <div class="aside-filter__content-box">
+        <label class="aside-filter__content-label">
+        <input class="filter-style" type="checkbox" checked>
+        SeaDoo Spark 90 </label>
+      </div>
+
+        <div class="aside-filter__content-box">
+        <label class="aside-filter__content-label">
+        <input class="filter-style" type="checkbox">
+        SeaDoo GTI 155</label>
+      </div>
+      <div class="aside-filter__content-box">
+        <label class="aside-filter__content-label">
+        <input class="filter-style" type="checkbox">
+        SeaDoo GTR 230</label>
+      </div>
+      <div class="filter-more">
+      <button class="filter-more__btn">Показать еще</button>
+      </div>
+      </div>
+
+      </li>
+       <li class="aside-filter__item-drop btn-checked">
+      <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Акции</p>
+      <div class="aside-filter__content">
+      <div class="aside-filter__content-box">
+        <label class="aside-filter__content-label">
+        <input class="filter-style" type="checkbox" >
+        <span class="btn-checked__text">SALE</span></label>
+      </div>
+      <div class="aside-filter__content-box">
+        <label class="aside-filter__content-label">
+        <input class="filter-style" type="checkbox" >
+        <span class="btn-checked__text">NEW</span></label>
+      </div>
+        <div class="aside-filter__content-box">
+        <label class="aside-filter__content-label">
+        <input class="filter-style" type="checkbox">
+        <span class="btn-checked__text">HIT</span></label>
+      </div>
+      <div class="aside-filter__content-box">
+        <label class="aside-filter__content-label">
+        <input class="filter-style" type="checkbox">
+        <span class="btn-checked__text">ДИЛЕР</span></label>
+      </div>
+      </div>
+      </li>
+<li class="aside-filter__item-drop countries">
+      <p class="aside-filter__item-title filter__item-drop filter__item-drop--active">Страны</p>
+      <div class="aside-filter__content">
+      <div class="aside-filter__content-box">
+        <label class="aside-filter__content-label">
+        <input class="filter-style" type="checkbox" checked>
+        Россия</label>
+      </div>
+      <div class="aside-filter__content-box">
+        <label class="aside-filter__content-label">
+        <input class="filter-style" type="checkbox" checked>
+        Германия</label>
+      </div>
+        <div class="aside-filter__content-box">
+        <label class="aside-filter__content-label">
+        <input class="filter-style" type="checkbox">
+        Китай</label>
+      </div>
+      <div class="aside-filter__content-box">
+        <label class="aside-filter__content-label">
+        <input class="filter-style" type="checkbox">
+        США</label>
+      </div>
+      <div class="filter-more">
+      <button class="filter-more__btn">Показать еще</button>
+      </div>
+      </div>
+      </li>
+<li class="aside-filter__item-drop">
+<button class="filter-btn__send" type="submit">ВЫБРАТЬ</button>
+<p class="filter__settings">Дополнительные параметры</p>
+<div class="filter__settings-content">more</div>
+<button class="filter-btn__reset" type="submit">Сбросить фильтры</button>
+</li>
+
+       </ul>
       </form>
       </div>
-      <div class="tabs-content aside-filter__tabs-content">content-2
+      <div class="tabs-content aside-filter__tabs-content" id="catalog-tab-2">content-2
         </div>
-    </div>
-
+      </div>
           </aside>
           <div class="catalog__inner-list">
             <div class="product-item__wrapper">
@@ -514,7 +687,7 @@
                   />
                 </div>
                 <h4 class="product-item__title">
-                  Гидроцикл BRP Sea-doo Spark 2-UP 900 Ace Vanilla
+                  Гидроцикл BRP Sea-doo Spark 2-UP 900 Ace
                 </h4>
                 <p class="price product-item__price">1 000 120 ₽</p>
                 <p class="product-item__notify-text">нет в наличии</p>
@@ -538,7 +711,7 @@
                   />
                 </div>
                 <h4 class="product-item__title">
-                  Гидроцикл Spark 3-UP 900 HO Ace IBR Blueberry
+                  Гидроцикл Spark 3-UP 900 HO Ace IBR
                 </h4>
                 <p class="price product-item__price">1 440 100 ₽</p>
                 <p class="product-item__notify-text">нет в наличии</p>
