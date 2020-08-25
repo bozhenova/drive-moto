@@ -543,6 +543,11 @@ body {
 .product-item__wrapper {
   position: relative;
   width: 271px;
+  transition: all 0.3s;
+}
+
+.product-item__wrapper.product-item__wrapper--list {
+  width: 100%;
 }
 
 .product-item {
@@ -592,9 +597,7 @@ body {
   font-weight: bold;
   line-height: 36px;
   font-size: 30px;
-  position: absolute;
-  bottom: 30px;
-  left: 60px;
+  text-align: center;
 }
 
 .product-item__cart {
@@ -658,6 +661,8 @@ body {
 }
 
 .product-item__notify-text {
+  position: relative;
+  bottom: -10px;
   display: none;
   font-weight: 700;
   font-size: 18px;
@@ -920,6 +925,11 @@ body {
   margin-left: 8px;
 }
 
+.catalog__filter-btn {
+  display: flex;
+  align-items: center;
+}
+
 .catalog__filter-btn button {
   background-color: transparent;
   border: none;
@@ -932,10 +942,31 @@ body {
   margin-left: 10px;
 }
 
-button.catalog__filter-btngrid {
+.catalog__filter-btngrid {
+  width: 26px;
+  height: 21px;
 }
 
-button.catalog__filter-btnline {
+.catalog__filter-btnlist {
+  width: 25px;
+  height: 19px;
+}
+
+.catalog__filter-button {
+  opacity: 0.3;
+  outline: none;
+}
+
+.catalog__filter-button--active {
+  opacity: 1;
+}
+
+.select-item {
+  border: 1px solid #d7d9df;
+  font-size: 14px;
+  line-height: 17px;
+  margin-right: 34px;
+  padding: 7px 10px 7px 20px;
 }
 
 .catalog__inner {
@@ -1342,4 +1373,65 @@ button.catalog__filter-btnline {
 
 .countries .aside-filter__content-box {
   width: 103px;
+}
+
+.filter-btn__send {
+  background: #f0f0f4;
+  padding: 16px 85px;
+  text-transform: uppercase;
+  font-size: 15px;
+  line-height: 18px;
+  letter-spacing: 0.12em;
+  color: #bdbec2;
+  border: none;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.filter-btn__send--active {
+  background-color: #1c62cd;
+  color: #ffffff;
+}
+
+.aside-filter__item-btn {
+  text-align: center;
+}
+
+.filter__settings {
+  font-size: 13px;
+  line-height: 16px;
+  position: relative;
+  padding-right: 29px;
+  display: inline-block;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.filter__settings::after {
+  content: '';
+  position: absolute;
+  background-image: url('../images/arrow-down.svg');
+  top: 4px;
+  right: 0;
+  width: 12px;
+  height: 8px;
+  transform: rotate(0deg);
+}
+
+.filter__settings-content {
+  display: none;
+}
+
+.filter__item-drop--active.filter__settings::after {
+  transform: rotate(180deg);
+}
+
+.filter-btn__reset {
+  background-color: transparent;
+  padding: 0;
+  border: none;
+  font-size: 13px;
+  line-height: 16px;
+  color: #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
 }
