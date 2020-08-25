@@ -119,12 +119,12 @@
             <button>еще</button>
           </div>
           <div class="catalog__filter-btn">
-            <select class="filter-style">
+            <select class="filter-style select-item">
               <option value="">По популярности</option>
               <option value="">По цене</option>
               <option value="">По количеству отзывов</option>
             </select>
-            <button class="catalog__gilter-btngrid">
+            <button class="catalog__filter-btngrid catalog__filter-button catalog__filter-button--active">
               <svg
                 width="23"
                 height="21"
@@ -178,7 +178,7 @@
                 />
               </svg>
             </button>
-            <button class="catalog__gilter-btnline">
+            <button class="catalog__filter-btnlist catalog__filter-button">
               <svg
                 width="25"
                 height="19"
@@ -186,7 +186,7 @@
                 fill="none"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <g opacity="0.3">
+                <g opacity="1">
                   <rect x="6" width="19" height="3" rx="1.5" fill="#2F3035" />
                   <rect
                     x="6"
@@ -414,13 +414,12 @@
       </div>
       </div>
       </li>
-<li class="aside-filter__item-drop">
-<button class="filter-btn__send" type="submit">ВЫБРАТЬ</button>
-<p class="filter__settings">Дополнительные параметры</p>
-<div class="filter__settings-content">more</div>
-<button class="filter-btn__reset" type="submit">Сбросить фильтры</button>
-</li>
-
+      <li class="aside-filter__item-drop aside-filter__item-btn">
+        <button class="filter-btn__send" type="submit">ВЫБРАТЬ</button>
+        <p class="filter__settings">Дополнительные параметры</p>
+       <div class="filter__settings-content">more</div>
+        <button class="filter-btn__reset" type="submit">Сбросить фильтры</button>
+      </li>
        </ul>
       </form>
       </div>
@@ -519,7 +518,7 @@
                   />
                 </div>
                 <h4 class="product-item__title">
-                  Гидроцикл BRP SeaDoo GTR 230hp STD Black / Gulfstream
+                  Гидроцикл BRP SeaDoo GTR 230hp STD Gulfstream
                 </h4>
                 <p class="price product-item__price">1 200 100 ₽</p>
                 <p class="product-item__notify-text">нет в наличии</p>
