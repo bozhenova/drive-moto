@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Drive Moto</title>
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/fonts.css" />
+    <link rel="stylesheet" href="css/ion.rangeSlider.min.css" />
+    <link rel="stylesheet" href="css/jquery.formstyler.css" />
+    <link rel="stylesheet" href="css/jquery.formstyler.theme.css" />
+    <link rel="stylesheet" href="css/jquery.rateyo.min.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top">
+        <div class="container">
+          <div class="header__top-inner">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Магазины</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Акции</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Доставка и оплата</a>
+                </li>
+              </ul>
+            </nav>
+            <a class="logo" href="./index.html">
+              <img class="logo__img" src="images/logo.svg" alt="Logo" />
+            </a>
+            <div class="header__box">
+              <p class="header__address">Москва, ул. Науки, 25</p>
+              <ul class="user-list">
+                <li class="user-list__item">
+                  <a class="user-list__link" href="#">
+                    <img src="images/favorite.svg" alt="Favorites" />
+                  </a>
+                </li>
+                <li class="user-list__item">
+                  <a class="user-list__link" href="#">
+                    <img src="images/user.svg" alt="Login" />
+                  </a>
+                </li>
+                <li class="user-list__item">
+                  <a class="user-list__link cart" href="#">
+                    <img src="images/cart.svg" alt="Cart" />
+                    <p class="cart__num">1</p>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <div class="menu-categories">
+            <li class="menu-categories__item">
+              <a class="menu-categories__link menu-categories__link--active"
+                >Гидроциклы</a
+              >
+            </li>
+            <li class="menu-categories__item">
+              <a class="menu-categories__link" href="#">Квадроциклы</a>
+            </li>
+            <li class="menu-categories__item">
+              <a class="menu-categories__link" href="#">Катера</a>
+            </li>
+            <li class="menu-categories__item">
+              <a class="menu-categories__link" href="#">Лодки</a>
+            </li>
+            <li class="menu-categories__item">
+              <a class="menu-categories__link" href="#">Вездеходы</a>
+            </li>
+            <li class="menu-categories__item">
+              <a class="menu-categories__link" href="#">Снегоходы</a>
+            </li>
+            <li class="menu-categories__item">
+              <a class="menu-categories__link" href="#">Двигатели</a>
+            </li>
+            <li class="menu-categories__item">
+              <a class="menu-categories__link" href="#">Запчасти</a>
+            </li>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="breadcrumbs">
+      <div class="container">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__list-item">
+            <a href="#">Главная</a>
+          </li>
+          <li class="breadcrumbs__list-item">
+            <a href="catalog.html">Гидроциклы</a>
+          </li>
+          <li class="breadcrumbs__list-item">
+            <span>Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="product-card">
+      <div class="container">
+        <div class="product-card__inner">
+          <div class="product-card__img-box product-item--sale">
+            <img
+              src="images/content/Jetski-big.png"
+              alt="Jetski"
+              class="product-card__img"
+            />
+            <p class="product-card__price-old">1 200 475 ₽</p>
+            <p class="product-card__price-new">1 100 475 ₽</p>
+            <a class="product-card__link" href="#"
+              >Нашли дешевле? Снизим цену!</a
+            >
+          </div>
+          <div class="product-card__content">
+            <h1 class="product-card__title">
+              Гидроцикл BRP SeaDoo GTI 155hp SE Long Blue Metallic
+            </h1>
+            <p class="product-card__code" href="#">Код товара: 366666-2</p>
+            <div class="product-card__buttons">
+              <button class="product-card__icon-favorite">
+                <img src="images/favorite.svg" alt="Favorite" />
+              </button>
+              <button class="product-card__icon-comparison" href="#">
+                <img src="images/compare.svg" alt="Compare" />
+              </button>
+              <div class="rate-yo rate" data-rateyo-rating="4"></div>
+            </div>
+            <div class="tabs-wrapper product-card__tabs">
+              <div class="tabs">
+                <a
+                  class="tab product-card__tab tab--active"
+                  href="#product-tab-1"
+                >
+                  <span>Характеристики</span>
+                </a>
+                <a class="tab product-card__tab" href="#product-tab-2">
+                  <span>Наличие в магазине</span>
+                </a>
+              </div>
+              <div class="tabs-container">
+                <div
+                  class="tabs-content product-card__tabs-content tabs-content--active"
+                  id="product-tab-1"
+                >
+                  <ul class="product-card__list">
+                    <li class="product-card__item">
+                      <div class="product-card__item-left">Производитель</div>
+                      <div class="product-card__item-right">Канада</div>
+                    </li>
+                    <li class="product-card__item">
+                      <div class="product-card__item-left">
+                        Количество мест, шт:
+                      </div>
+                      <div class="product-card__item-right">3</div>
+                    </li>
+                    <li class="product-card__item">
+                      <div class="product-card__item-left">Мощность, л.с.</div>
+                      <div class="product-card__item-right">155</div>
+                    </li>
+                    <li class="product-card__item">
+                      <div class="product-card__item-left">Тип двигателя</div>
+                      <div class="product-card__item-right">Бензиновый</div>
+                    </li>
+                    <li class="product-card__item">
+                      <div class="product-card__item-left">Год выпуска</div>
+                      <div class="product-card__item-right">2018</div>
+                    </li>
+                  </ul>
+                  <a class="product-card__more" href="#">Показать еще</a>
+                  <div class="product-card__btn">
+                    <button>купить</button>
+                  </div>
+                </div>
+                <div
+                  class="tabs-content product-card__tabs-content"
+                  id="product-tab-2"
+                >
+                  content-2
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <div class="footer__top-inner">
+            <div class="footer__top-item footer__top-newsletter">
+              <h6 class="footer__top-title">
+                Подпишитесь на нашу рассылку и узнавайте об акциях быстрее
+              </h6>
+              <form class="footer-form">
+                <input
+                  class="footer-form__input"
+                  type="text"
+                  placeholder="Введите ваш e-mail:"
+                />
+                <button class="footer-form__input-btn" type="submit">
+                  Отправить
+                </button>
+              </form>
+            </div>
+            <div class="footer__top-item">
+              <h6 class="footer__top-title">
+                Информация
+              </h6>
+              <ul class="footer-list">
+                <li class="footer-list__item"><a href="#">О компании</a></li>
+                <li class="footer-list__item"><a href="#">Контакты</a></li>
+                <li class="footer-list__item"><a href="#">Акции</a></li>
+                <li class="footer-list__item"><a href="#">Магазины</a></li>
+              </ul>
+            </div>
+            <div class="footer__top-item">
+              <h6 class="footer__top-title">
+                Интернет-магазин
+              </h6>
+
+              <ul class="footer-list">
+                <li class="footer-list__item">
+                  <a href="#">Доставка и самовывоз</a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#">Оплата</a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#">Возврат-обмен</a>
+                </li>
+                <li class="footer-list__item">
+                  <a href="#">Новости</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__top-item footer__top-social">
+              <ul class="social-list">
+                <li class="social-list__item">
+                  <a href="#"
+                    ><img src="images/instagram.svg" alt="Instagram logo"
+                  /></a>
+                </li>
+                <li class="social-list__item">
+                  <a href="#"
+                    ><img src="images/vkontakte.svg" alt="Vkontakte logo"
+                  /></a>
+                </li>
+                <li class="social-list__item">
+                  <a href="#"
+                    ><img src="images/facebook.svg" alt="Facebook logo"
+                  /></a>
+                </li>
+                <li class="social-list__item">
+                  <a href="#"
+                    ><img src="images/youtube.svg" alt="Youtube logo"
+                  /></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer__bottom">
+          <a class="footer__bottom-link" href="#">Договор оферты</a>
+          <a class="footer__bottom-link" href="#"
+            >Политика обработки персональных данных</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/ion.rangeSlider.min.js"></script>
+    <script src="js/jquery.formstyler.min.js"></script>
+    <script src="js/jquery.rateyo.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
