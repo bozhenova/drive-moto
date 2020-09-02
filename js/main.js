@@ -4,7 +4,15 @@ $(function () {
     prevArrow:
       '<button class="banner-section__slider-btn banner-section__slider-btnprev"><img src="images/arrow-left.svg" alt="Left arrow"></button>',
     nextArrow:
-      '<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="images/arrow-right.svg" alt="Right arrow"></button>'
+      '<button class="banner-section__slider-btn banner-section__slider-btnnext"><img src="images/arrow-right.svg" alt="Right arrow"></button>',
+    responsive: [
+      {
+        breakpoint: 961,
+        settings: {
+          arrows: false
+        }
+      }
+    ]
   });
 
   $('.tab').on('click', function (e) {
