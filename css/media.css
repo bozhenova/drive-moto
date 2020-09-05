@@ -21,6 +21,12 @@
   .categories__inner {
     justify-content: space-around;
   }
+
+  .banner__link img {
+    width: 100%;
+  }
+
+
 }
 
 @media (max-width: 1100px) {
@@ -102,11 +108,11 @@
     width: 1000px;
   }
 
-  .search__tabs {
+  .tabs-wrapper {
     overflow-x: scroll;
   }
 
-  .search__tabs::-webkit-scrollbar {
+  .tabs-wrapper::-webkit-scrollbar {
     display: none;
   }
 }
@@ -164,7 +170,7 @@
   }
 
   .mobile-overflow {
-    width: 620px;
+    width: 850px;
   }
 }
 
