@@ -18,10 +18,14 @@ $(function () {
   $('.tab').on('click', function (e) {
     e.preventDefault();
     $($(this).siblings()).removeClass('tab--active');
-    $($(this).parent().parent().siblings().find('div')).removeClass(
-      'tabs-content--active'
-    );
     $(this).addClass('tab--active');
+    $(this).hasClass('aside-filter__tab')
+      ? $($(this).parent().siblings().find('div')).removeClass(
+          'tabs-content--active'
+        )
+      : $($(this).parent().parent().siblings().find('div')).removeClass(
+          'tabs-content--active'
+        );
     $($(this).attr('href')).addClass('tabs-content--active');
   });
 
@@ -114,5 +118,8 @@ $(function () {
   $('.footer__top-title').on('click', function () {
     $(this).next().slideToggle();
     $(this).toggleClass('footer__topdrop--active');
+  });
+  $('.aside__btn').on('click', function () {
+    $(this).next().slideToggle();
   });
 });
