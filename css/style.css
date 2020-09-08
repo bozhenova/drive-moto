@@ -842,6 +842,10 @@ body {
   padding-top: 43px;
 }
 
+.footer__topdrop {
+  pointer-events: none;
+}
+
 .footer__top-inner {
   display: flex;
   justify-content: space-between;
@@ -1625,6 +1629,10 @@ body {
 
 .product-card__list {
   margin-bottom: 20px;
+}
+
+.product-card__btn--mobile {
+  display: none;
 }
 
 .product-card__btn button {

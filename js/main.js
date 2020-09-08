@@ -19,14 +19,15 @@ $(function () {
     e.preventDefault();
     $($(this).siblings()).removeClass('tab--active');
     $(this).addClass('tab--active');
-    $(this).hasClass('aside-filter__tab')
-      ? $($(this).parent().siblings().find('div')).removeClass(
-          'tabs-content--active'
-        )
-      : $($(this).parent().parent().siblings().find('div')).removeClass(
-          'tabs-content--active'
-        );
+    $(this)
+      .closest('.tabs-wrapper')
+      .siblings()
+      .find('div')
+      .removeClass('tabs-content--active');
+
     $($(this).attr('href')).addClass('tabs-content--active');
+
+    $('.slick-slider').slick('setPosition');
   });
 
   $('.product-item__favorite').on('click', function (e) {
