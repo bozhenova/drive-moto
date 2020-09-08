@@ -39,6 +39,43 @@
   .header__address {
     margin-right: 20px;
   }
+
+  .card__input-search {
+    margin-right: 0;
+  }
+
+  .card__list-item.card__list-itemtitle {
+    display: none;
+  }
+}
+
+@media (max-width: 980px) {
+  .card__top-line label {
+    display: block;
+    width: 100%;
+    margin-bottom: 25px;
+    margin-left: 0;
+  }
+
+  .card__list-item {
+    display: block;
+    margin-left: 10%;
+    border-bottom: none;
+    width: 200px;
+  }
+
+  .card__list-item div {
+    margin-bottom: 15px;
+  }
+
+  .card__list {
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .card__list::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 @media (max-width: 960px) {
@@ -120,6 +157,27 @@
 
   .tabs-wrapper::-webkit-scrollbar {
     display: none;
+  }
+
+  .product-card__inner {
+    flex-wrap: wrap;
+  }
+
+  .product-card__tabs {
+    display: none;
+  }
+
+  .product-card__content {
+    order: -1;
+  }
+
+  .product-card__btn--mobile {
+    display: block;
+    margin-top: 40px;
+  }
+
+  .product-card__img-box {
+    width: 100%;
   }
 }
 
@@ -256,6 +314,27 @@
   .aside-filter {
     display: none;
   }
+
+  .product-card__title {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  .product-card__img {
+    width: 100%;
+  }
+
+  .rate {
+    margin-left: 15px;
+  }
+
+  .jq-ry-container {
+    padding-left: 0;
+  }
+
+  .product-card__buttons button + button {
+    margin-left: 15px;
+  }
 }
 
 @media (max-width: 540px) {
@@ -322,6 +401,7 @@
 
   .footer__topdrop {
     position: relative;
+    pointer-events: auto;
   }
 
   .footer__topdrop::after {
@@ -347,7 +427,11 @@
   }
 
   .breadcrumbs__list.mobile-overflow {
-    width: 600px;
+    width: 630px;
+  }
+
+  .card__list-item {
+    margin-left: 30%;
   }
 }
 
@@ -366,5 +450,18 @@
   .catalog__filter-btn {
     border-bottom: 2px solid #dadadf;
     border-top: 2px solid #dadadf;
+  }
+}
+
+@media (max-width: 435px) {
+  .card__input-search {
+    margin-left: 0;
+    margin-top: 15px;
+  }
+}
+
+@media (max-width: 340px) {
+  .card__input-search {
+    width: 290px;
   }
 }
