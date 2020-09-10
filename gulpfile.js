@@ -5,17 +5,13 @@ var gulp = require('gulp'),
   minify = require('gulp-csso');
 
 gulp.task('css', function () {
-  return (
-    gulp
-      .src('./css/*.css')
-      .pipe(autoprefixer(['last 4 versions'], { cascade: true }))
-      .pipe(gulp.dest('./css'))
-      // .pipe(minify())
-      // .pipe(gulp.dest('./css'))
-      // .pipe(rename({ suffix: '.min' }))
-      // .pipe(gulp.dest('./css'))
-      .pipe(browserSync.reload({ stream: true }))
-  );
+  return gulp
+    .src('./css/*.css')
+    .pipe(autoprefixer(['last 4 versions'], { cascade: true }))
+    .pipe(minify())
+    .pipe(rename({ suffix: '.min' }))
+    .pipe(gulp.dest('./css/min/'))
+    .pipe(browserSync.reload({ stream: true }));
 });
 
 gulp.task('html', function () {
